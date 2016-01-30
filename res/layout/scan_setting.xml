@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#eee"
+        android:orientation="vertical" >
+        
+        <RelativeLayout 
+  			android:layout_width="fill_parent"
+  			android:layout_height="45dp"
+  			android:id="@+id/title" 
+  			android:background="@drawable/title_bar"
+  			android:gravity="center_vertical"  >  
+  			
+            
+      		<TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="@string/SMSZ"
+        		android:layout_centerInParent="true"
+        		android:textSize="20sp"		
+				android:textColor="#ffffff" />
+
+			<Button
+			    android:id="@+id/Scan_btn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_alignParentTop="true"
+			    android:background="@drawable/title_btn_back"
+			    android:onClick="btnmainright"
+			    android:text="@string/FH"
+			    android:textSize="20sp"		
+				android:textColor="#ffffff"
+			    android:src="@drawable/title_btn_function" />
+      
+		</RelativeLayout>
+		<ScrollView 
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		android:scrollbarStyle="outsideOverlay" 
+    		 >
+        	<LinearLayout
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:orientation="vertical" >
+            		<RelativeLayout
+            		    android:id="@+id/smsz"
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:layout_marginTop="14dp"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_first_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="@string/SHYX"
+        					android:textSize="17sp"		
+							android:textColor="#000" />
+            			   					
+      				</RelativeLayout>
+
+      				 <LinearLayout
+      				     android:layout_width="fill_parent"
+      				     android:layout_height="wrap_content"
+      				     android:background="@drawable/preference_last_item"
+      				     android:clickable="false"
+      				     android:gravity="center_vertical" >
+
+      				     <RadioGroup
+      				         android:id="@+id/xz"
+      				         android:layout_width="wrap_content"
+      				         android:layout_height="wrap_content"
+      				         android:layout_alignParentLeft="true"
+      				         android:layout_alignParentRight="true"
+      				         android:layout_weight="3.65"
+      				         android:contentDescription="选择" >
+
+      				         <RadioButton
+      				             android:id="@+id/tj"
+      				             android:layout_width="match_parent"
+      				             android:layout_height="35dp"
+      				             android:text="@string/YXSM" />
+
+      				         <RadioButton
+      				             android:id="@+id/qs"
+      				             android:layout_width="match_parent"
+      				             android:layout_height="35dp"
+      				             android:checked="true"
+      				             android:text="@string/NYXSM" />
+      				     </RadioGroup>
+
+      				    
+      				 </LinearLayout>
+<RelativeLayout
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:layout_marginTop="14dp"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_first_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="@string/SFSL"
+        					android:textSize="17sp"		
+							android:textColor="#000" />
+            			     					
+      				</RelativeLayout>
+      				<LinearLayout
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:background="@drawable/preference_last_item"
+        	        android:clickable="false"
+        	        android:gravity="center_vertical" >
+
+        	        <RadioGroup
+        	             android:id="@+id/SL"
+        	             android:layout_width="wrap_content"
+        	             android:layout_height="wrap_content"
+        	             android:layout_alignParentLeft="true"
+        	             android:layout_alignParentRight="true"
+        	             android:contentDescription="选择" >
+
+        	            <RadioButton
+        	                android:id="@+id/mrsl"
+        	                android:layout_width="match_parent"
+        	                android:layout_height="35dp"
+        	                android:text="@string/MRSL" />
+        	             <RadioButton
+        	            android:id="@+id/srsl"
+        	            android:layout_width="match_parent"
+        	            android:layout_height="35dp"
+        	            android:checked="true"
+        	            android:text="@string/SRSL" />
+
+        </RadioGroup>
+
+        	       
+
+        	    </LinearLayout>	
+      				<!--   ********************************************************************   -->
+      				
+      				<RelativeLayout
+      				    android:id="@+id/clear"
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:layout_marginTop="14dp"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_first_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="@string/SFCK"
+        					android:textSize="17sp"		
+							android:textColor="#000" />
+            			     					
+      				</RelativeLayout>
+      				<LinearLayout
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:background="@drawable/preference_last_item"
+        	        android:clickable="false"
+        	        android:gravity="center_vertical" >
+
+        	        <RadioGroup
+        	             android:id="@+id/cksz"
+        	             android:layout_width="wrap_content"
+        	             android:layout_height="wrap_content"
+        	             android:layout_alignParentLeft="true"
+        	             android:layout_alignParentRight="true"
+        	             android:contentDescription="选择" >
+
+        	            <RadioButton
+        	                android:id="@+id/bxck"
+        	                android:layout_width="match_parent"
+        	                android:layout_height="35dp"
+        	                android:text="@string/NXYCK" />
+                        <RadioButton
+        	            android:id="@+id/xuck"
+        	            android:layout_width="match_parent"
+        	            android:layout_height="35dp"
+        	            android:checked="true"
+        	            android:text="@string/XYCK" />
+        </RadioGroup>
+
+        	        
+
+        	    </LinearLayout>
+      				
+      				<!--   ***********************************************************************   -->
+      				<RelativeLayout
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginTop="14dp"
+        	        android:background="@drawable/preference_first_item"
+        	        android:clickable="true"
+        	        android:gravity="center_vertical" >
+
+        	        <TextView
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:padding="8dp"
+        	            android:text="@string/XYDH"
+        	            android:textColor="#000"
+        	            android:textSize="16sp" />
+
+        	       
+        	    </RelativeLayout>
+
+                 <RelativeLayout
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="0.45"
+                     android:background="@drawable/preference_last_item"
+                     android:clickable="false"
+                     android:gravity="center_vertical" >
+
+        	        <RadioGroup
+        	             android:id="@+id/dhsz"
+        	             android:layout_width="wrap_content"
+        	             android:layout_height="wrap_content"
+        	             android:layout_alignParentLeft="true"
+        	             android:layout_alignParentRight="true"
+        	             android:contentDescription="选择" >
+
+        	          
+        	                <RadioButton
+        	                 android:id="@+id/bxdh"
+        	                 android:layout_width="match_parent"
+        	                 android:layout_height="35dp"
+        	                 android:text="@string/NXYCK" />
+        	                <RadioButton  
+        	                android:id="@+id/xudh"
+        	                android:layout_width="match_parent"
+        	                android:layout_height="35dp"
+        	                android:checked="true"
+        	                android:text="@string/SRDH" />
+
+        	             <RadioButton
+        	                 android:id="@+id/zddh"
+        	                 android:layout_width="match_parent"
+        	                 android:layout_height="35dp"
+        	                
+        	                 android:text="@string/ZDDH" />
+
+        </RadioGroup>
+        	    </RelativeLayout>
+      			<RelativeLayout
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:layout_marginTop="14dp"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_first_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="@string/SFSJ"
+        					android:textSize="17sp"		
+							android:textColor="#000" />					
+      				</RelativeLayout>
+      				<LinearLayout
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:background="@drawable/preference_last_item"
+        	        android:clickable="false"
+        	        android:gravity="center_vertical" >
+
+        	        <RadioGroup
+        	             android:id="@+id/cksetsj"
+        	             android:layout_width="wrap_content"
+        	             android:layout_height="wrap_content"
+        	             android:layout_alignParentLeft="true"
+        	             android:layout_alignParentRight="true"
+        	             android:contentDescription="选择" >
+
+        	            <RadioButton
+        	                android:id="@+id/bxsj"
+        	                android:layout_width="match_parent"
+        	                android:layout_height="35dp"
+        	                android:text="@string/NXYCK" />
+                        <RadioButton
+        	            android:id="@+id/xysj"
+        	            android:layout_width="match_parent"
+        	            android:layout_height="35dp"
+        	            android:checked="true"
+        	            android:text="@string/XYCK" />
+        </RadioGroup>
+
+        	        
+
+        	    </LinearLayout>
+      				<!--   ***********************************************************************   -->
+      				<!--   ********************************************************************   -->
+      				
+      				<!--   ***********************************************************************   -->
+      				<!--   ***********************************************************************   -->     	
+        	
+        	</LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/title_bar"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/qs_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical"
+       android:background="@drawable/title_bar"
+      >
+
+        <TextView
+            android:id="@+id/detail1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"    
+            android:singleLine="false"
+             android:textColor="@color/black"
+             android:background="#FAFCFDF9"
+            android:textSize="20sp" />
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="#FAFCFDF9" 
+    >
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="条码:"
+       android:textColor="@color/blue"
+       android:textSize="24sp" />
+  <TextView
+            android:id="@+id/detail2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+             android:textColor="@color/blue"
+       android:textSize="24sp" />
+</LinearLayout>
+<LinearLayout 
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal" 
+   
+       android:background="#FAFCFDF9"    
+    >
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="实际货架:"
+        android:textColor="@color/blue"
+       android:textSize="24sp" />
+   
+     <TextView
+            android:id="@+id/detail3"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" 
+             android:textColor="@color/blue"
+       android:textSize="24sp"/>
+</LinearLayout>        
+<LinearLayout 
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal" 
+  
+       android:background="#FAFCFDF9"    
+    >
+  <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="规格:"
+       android:textColor="#000000"
+       android:textSize="20sp" />
+   <TextView
+          android:id="@+id/detail4"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#000000"
+          android:textSize="20sp" /> 
+    
+</LinearLayout>
+
+<LinearLayout 
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal" 
+  
+       android:background="#FAFCFDF9"    
+    >
+   <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="尺码:"
+     android:textColor="#000000"
+     android:textSize="20sp" />
+   
+   <TextView
+       android:id="@+id/detail5"
+       android:layout_width="125dp"
+       android:layout_height="wrap_content"
+       android:textColor="#000000"
+       android:textSize="20sp" />
+ 
+    <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="最终数量:"
+     android:textColor="#000000"
+     android:textSize="20sp" />      
+   
+    <TextView
+          android:id="@+id/detail6"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#000000"
+          android:textSize="18sp" /> 
+</LinearLayout>
+
+<LinearLayout 
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  android:background="#FAFCFDF9"     
+    >
+   <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="正品价:"
+     android:textColor="#000000"
+     android:textSize="20sp" />
+   
+   <TextView
+       android:id="@+id/detail7"
+       android:layout_width="108dp"
+       android:layout_height="wrap_content"
+       android:textColor="#000000"
+       android:textSize="20sp" />
+ 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="折后价:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+   
+    <TextView
+          android:id="@+id/detail8"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#000000"
+          android:textSize="20sp" /> 
+</LinearLayout>
+<LinearLayout 
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal" 
+   android:background="#FAFCFDF9"    
+    >
+   <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="应扫:"
+     android:textColor="@color/blue"
+       android:textSize="24sp" />
+   
+   <TextView
+       android:id="@+id/detail9"
+       android:layout_width="118dp"
+       android:layout_height="wrap_content"
+       android:textColor="@color/blue"
+       android:textSize="24sp" />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="已扫:"
+       android:textColor="@color/blue"
+       android:textSize="24sp" />
+   
+    <TextView
+          android:id="@+id/detail10"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+           android:textColor="@color/blue"
+       android:textSize="24sp" /> 
+</LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <string name="app_name">Invoicing System</string>
+
+    <!--  BluetoothChat -->
+    <string name="send">Send out</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth is not enabled. Program exit</string>
+    <string name="title_connecting">Connect BT.</string>
+    <string name="title_connected_to"> connected </string>
+    <string name="title_not_connected">BT off</string>
+    <string name="button_clean">Clear the screen</string>
+    <string name="button_break">Connect</string>
+    <string name="checkBox_sixteen">Sixteen binary display</string>
+    <string name="radioMale">Sixteen hex output</string>
+    <string name="checkBox_line_feed">Line output</string>
+    <string name="button_cleantwo">Clear input box</string>
+    <string name="duankai">To break off</string>
+    <string name="prompt_message">No data for viewing</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">Scanning unknown device...</string>
+    <string name="select_device">Choose a device connection</string>
+    <string name="none_paired">No pairing equipment</string>
+    <string name="none_found">No connection was established</string>
+    <string name="title_paired_devices">Paired equipment</string>
+    <string name="title_other_devices">Other available equipment</string>
+    <string name="button_scan">Scanning equipment</string>
+     <string name="button_full_screen">Full screen</string>
+     <string name="button_return">Return</string>
+    <!-- Options Menu -->
+    <!-- Options Menu -->
+    <string name="secure_connect">Connect one device</string>
+    <string name="insecure_connect">Set up</string>
+    <string name="discoverable">Bluetooth visible</string>
+    <string name="clenr">Program exit</string>
+    <string name="scan_text">The two dimensional code into the box, you can automatically scan</string>
+       <!-- 资料更新 -->
+    <string name="ZLGX">Data updating</string>
+    <string name="INF1">Name</string>
+    <string name="INF2">No.</string>
+    <string name="INF3">Specifications</string>
+    <string name="INF4">Model</string>
+    <string name="INF5">The purchase price</string>
+    <string name="INF6">Price</string>
+    <string name="INF7">Company</string>
+    <string name="INF8">Remark one</string>
+    <string name="INF9">Remark two</string>
+    <string name="INF10">Remark three</string>
+    <string name="setinf">Please put INF in the SD card directory</string>
+    <string name="seton">Import complete:</string>
+    <string name="inf">bar</string>
+    <string name="INFre">"The trial expired, please register"</string>
+    <string name="save">"Save success"</string>
+    <!--出入库盘点的-->
+    <string name="Transferpovit">not pass:</string>
+    <string name="Transferall">passed:</string>
+    <string name="RKtital">Storage scan</string>
+    <string name="CKtital">Outbound scan</string> 
+    <string name="PDtital">Inventory scan</string> 
+    <string name="KCtital">Inventory query</string> 
+    <string name="INFtital">Data updating</string>
+    <string name="power">POWER:</string> 
+    <string name="SKconnected">Connected  </string> 
+    <string name="Noconnected">No connect  </string>  
+    <string name="connectting">connecting   </string>  
+    <string name="SKconnecting">Is connecting the server </string> 
+    <string name="Noset">There is no setup for the IP, please go to the system settings.  </string> 
+    <string name="rescan">Repeat scan, unable to storage</string>
+    <string name="nosent">Send can not be empty</string>
+    <string name="Delet">Delete success</string>
+    <string name="SYS">System hints</string>
+    <string name="IsClear">Empty data</string>
+    <string name="S">Determine</string>
+    <string name="N">Return</string>
+    <string name="NCK">Repeat scan, can not out of the library</string>
+    <string name="RScan">Repeat scan</string>
+    <string name="SB">Scan failure</string>
+    <string name="Sockted">Server has been connected</string>
+    <string name="Nosocket">Server connection failure! Please check if the network is open.</string>
+    <string name="IP">Connect IP exception</string>
+    <string name="dk">The server was disconnected.</string>
+    <string name="NOinft">No bar code information</string>
+    <string name="DH">Odd</string>
+    <string name="CK">Ware</string>
+    <string name="TM">Bar</string>
+    <string name="SL">Num</string>
+    <string name="YR">Has in </string>
+    <string name="KC">Stock</string>
+    <string name="QDRK">sure</string>
+    <string name="SSZL">Search</string>
+    <string name="Sjsm">Mobile scann</string>
+    <string name="JGSM">Laser scanning</string>  
+    <string name="QDcK">sure outbound</string> 
+    <string name="SJ">Price</string>
+    <string name="YC">Have</string>
+     <string name="QDPD"> inventory</string>
+     <string name="YP">disk</string>
+      <string name="SAVEINF">Saved information</string>
+     <!--员工登陆的-->
+     <string name="YHDL">User login </string> 
+     <string name="FH">Return</string>
+     <string name="DL">Sign in</string>
+     <string name="CS">(Initial account number:01)</string>
+     <string name="MM">(password:111111)</string>
+      <!--注册-->
+      <string name="ZC">Registered</string>
+      <string name="SY">On trial</string>
+      <string name="SYQD">Probation due</string>
+      <string name="ts">Your probation period has arrived\nIf you want to continue to make\nPlease register software</string>
+      <string name="TCQ">Sign out</string>
+      <!--账号添加的--> 
+       <string name="ZHTJ">Add the account number </string> 
+       <string name="ZH">Account number </string>
+       <string name="zhMM">password</string>
+       <string name="ZHQD">Determine</string>
+       <string name="ZHSC">Delete account</string>
+       
+       
+       <string name="ZHGL">Account management</string>
+        <string name="ZHQH">Account switching</string>
+        <string name="ZGMM">Change password</string>
+        <string name="HFSZ">Restore factory settings</string>
+        
+        
+        <string name="WLSZ">Network setup</string>
+        <string name="IPSZ">IP settings</string>
+        <string name="IPSZBC">Please enter IP and save settings</string>
+        <string name="DKSZBC">Please enter a port and save settings</string>
+        <string name="DKH">Port number:</string>
+        <string name="FWQM">Server name:</string>
+        <string name="BCSZMC">    Save settings (save after the completion of the click to save)</string>
+        
+        
+        <string name="SMSZ">Scan settings</string>
+        <string name="SHYX">Allow repeat scan</string>
+        <string name="YXSM">Allow</string>
+        <string name="NYXSM">Not allow</string>
+        <string name="SFSL">Do you need to enter a quantity</string>
+        <string name="MRSL">Defaults to 1</string>
+        <string name="SRSL">Input</string>
+        <string name="SFCK">Do you need a warehouse</string>
+        <string name="NXYCK">Unwanted</string>
+        <string name="XYCK">Need</string>
+        <string name="XYDH">Whether you need to order</string>
+        <string name="SRDH">Input</string>
+        <string name="ZDDH">Automatic number</string>
+        
+        <string name="MMXG">Password change</string>
+        <string name="JMM">Old password</string>
+         <string name="xMM">New password</string>
+         <string name="EWMSM">Two dimensional code scanning</string>
+         <string name="XTSZ">Set</string>
+         <string name="SGQKMM">This operation will empty all the user name\nAnd the password becomes the initial password\nWhether recovery\n</string>
+         <string name="GYJXC">About Invoicing</string>
+         <string name="BBH">Version number:      JXC_android.1.2.7</string>
+         <string name="JSZC">Technical support     2201037371</string>
+         <string name="LXWM">Contact us     020-85279260</string>
+         
+         <string name="DRZLS">Import data</string>
+         <string name="qksj">Empty data</string>
+         
+</resources>

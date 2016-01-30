@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#eee"
+        android:orientation="vertical" >
+        
+         <RelativeLayout 
+  			android:layout_width="fill_parent"
+  			android:layout_height="45dp"
+  			android:id="@+id/title" 
+  			android:background="@drawable/title_bar"
+  			android:gravity="center_vertical"  >  
+  			
+            
+      		<TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="@string/WLSZ"
+        		android:layout_centerInParent="true"
+        		android:textSize="20sp"		
+				android:textColor="#ffffff" />
+
+			<Button
+			    android:id="@+id/IP_btn"
+			    android:layout_width="67dp"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_alignParentTop="true"
+			    android:background="@drawable/title_btn_back"
+			    android:onClick="btnmainright"
+			    android:text="@string/FH"
+			    android:textSize="20sp"		
+				android:textColor="#ffffff"
+			    android:src="@drawable/title_btn_function" />
+      
+		</RelativeLayout>
+   
+        	<LinearLayout
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:orientation="vertical" >
+
+        	    <RelativeLayout
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginTop="14dp"
+        	        android:background="@drawable/preference_first_item"
+        	        android:gravity="center_vertical" >
+
+        	        <TextView
+        	            android:id="@+id/textView1"
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:padding="8dp"
+        	            android:text="@string/IPSZ"
+        	            android:textColor="#000"
+        	            android:textSize="17sp" />
+
+        	        <ImageView
+        	            android:id="@+id/imageView1"
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:layout_alignParentRight="true"
+        	            android:layout_centerVertical="true"
+        	            android:clickable="true"
+        	            android:scaleType="matrix"
+        	            android:src="@drawable/mm_submenu" />
+
+        	    </RelativeLayout>
+
+        	    <RelativeLayout
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:background="@drawable/preference_item"
+        	        android:clickable="true"
+        	        android:gravity="center_vertical" >
+
+        	        <TextView
+        	            android:id="@+id/textView2"
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:padding="8dp"
+        	            android:text="I P :"
+        	            android:textColor="#000"
+        	            android:textSize="17sp" />
+
+        	        <ImageView
+        	            android:id="@+id/imageView2"
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:layout_alignParentRight="true"
+        	            android:layout_centerVertical="true"
+        	            android:scaleType="matrix"
+        	            android:src="@drawable/mm_submenu" />
+
+        	        <EditText
+        	            android:id="@+id/IP"
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:layout_alignBottom="@+id/textView2"
+        	            android:layout_alignParentTop="true"
+        	            android:layout_alignRight="@+id/imageView2"
+        	            android:layout_toRightOf="@+id/textView2"
+        	            android:background="@color/white"
+        	            android:layout_marginTop="2dp"
+        	            android:ems="10"
+        	            android:hint="@string/IPSZBC"
+        	            android:singleLine="true" />
+
+        	    </RelativeLayout>
+
+        	    <RelativeLayout
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:layout_weight="0.18"
+        	        android:background="@drawable/preference_item"
+        	        android:clickable="true"
+        	        android:gravity="center_vertical" >
+
+        	        <TextView
+        	            android:id="@+id/textView3"
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:padding="8dp"
+        	            android:text="@string/DKH"
+        	            android:textColor="#000"
+        	            android:textSize="17sp" />
+
+        	        <ImageView
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:layout_alignParentRight="true"
+        	            android:layout_centerVertical="true"
+        	            android:scaleType="matrix"
+        	            android:src="@drawable/mm_submenu" />
+
+        	        <EditText
+        	            android:id="@+id/PORT"
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:layout_alignBottom="@+id/textView3"
+        	            android:layout_alignParentTop="true"
+        	            android:layout_toRightOf="@+id/textView3"
+        	             android:background="@color/white"
+        	             android:layout_marginTop="2dp"
+        	            android:singleLine="true"
+        	            android:numeric="decimal"
+        	            android:hint="@string/DKSZBC"
+        	            
+        	            android:ems="10" >
+                        
+        	        </EditText>
+        	    </RelativeLayout>
+        	    
+        	    
+        	    
+   <RelativeLayout
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:layout_weight="0.18"
+        	        android:background="@drawable/preference_last_item"
+        	        android:clickable="true"
+        	        android:gravity="center_vertical" >
+
+        	        <TextView
+        	            android:id="@+id/textView3"
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:padding="8dp"
+        	            android:text="@string/FWQM"
+        	            android:textColor="#000"
+        	            android:textSize="17sp" />
+
+        	        <ImageView
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:layout_alignParentRight="true"
+        	            android:layout_centerVertical="true"
+        	            android:scaleType="matrix"
+        	            android:src="@drawable/mm_submenu" />
+
+        	        <EditText
+        	            android:id="@+id/fwq"
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:layout_alignBottom="@+id/textView3"
+        	            android:layout_alignParentTop="true"
+        	            android:layout_toRightOf="@+id/textView3"
+        	            android:background="@color/white"
+        	            android:layout_marginTop="2dp"
+        	            android:singleLine="true"
+        	            android:ems="10" >
+        	        </EditText>
+        	    </RelativeLayout>
+        	    
+   
+        	    <RelativeLayout
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="120dp"
+        	        android:clickable="true"
+        	        android:layout_marginTop="14dp"
+        	        android:gravity="center_vertical" >
+
+        	         <Button
+        	             android:id="@+id/SA"
+        	             android:layout_width="fill_parent"
+        	             android:layout_height="120dp"
+        	             android:layout_alignParentLeft="true"
+        	             android:layout_alignParentTop="true"
+        	             android:background="@drawable/btn_style_white"
+        	             android:padding="8dp"
+        	             android:text="@string/BCSZMC"
+        	             android:textColor="#000"
+        	             android:textSize="17sp" />
+
+        	    </RelativeLayout>
+
+        	    <!-- ******************************************************************** -->
+
+        	    <RelativeLayout
+        	        android:id="@+id/i"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:layout_weight="0.10"
+        	       
+        	        android:clickable="true"
+        	        android:gravity="center_vertical" >
+
+        	    </RelativeLayout>
+
+        	    <RelativeLayout
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginTop="14dp"
+        	        android:layout_weight="0.77"
+        	    
+        	        android:clickable="true"
+        	        android:gravity="center_vertical" >
+
+        	    </RelativeLayout>
+
+        	    <!-- *********************************************************************** -->
+
+        	    <!-- *********************************************************************** -->
+
+
+        	    <!-- *********************************************************************** -->
+        	    
+        	    
+        	    
+        	    <!-- *********************************************************************** -->
+
+        	</LinearLayout>
+
+        	
+
+</LinearLayout>

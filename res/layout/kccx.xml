@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/chat_bg_default"
+    android:orientation="vertical" >
+ <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+     android:orientation="vertical"
+     >
+     
+     
+     
+     
+ 
+    <RelativeLayout
+        android:id="@+id/qs_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="28dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/KCtital"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+ <RelativeLayout
+     android:id="@+id/qs_layout"
+     android:layout_width="fill_parent"
+     android:layout_height="38dp"
+     android:background="@drawable/title_bar"
+     android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/KCbt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/KCdl"
+            android:background="@drawable/title_btn_right"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/KCdl"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/title_btn_right"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/KClj"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/KCdl"
+            android:background="@drawable/title_btn_right"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/qs_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_footer_bg" >
+        <EditText
+            android:id="@+id/kcKC"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/Button01"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/Button01"
+            android:background="@drawable/login_edit_normal"
+            android:ems="10"
+            android:hint="0"
+            android:singleLine="true"
+            android:textColor="#ff0000"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/kcck"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/Button03"
+            android:background="@drawable/login_edit_normal"
+            android:hint="CK001"
+            android:singleLine="true"
+            android:textColor="#ff0000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/kcsear"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/Button01"
+            android:background="@drawable/chat_send_btn"
+            android:text="@string/SSZL" />
+
+        <Button
+            android:id="@+id/Button03"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/chat_send_btn"
+            android:text="@string/CK" />
+
+        <EditText
+            android:id="@+id/kc_sendmessage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/kcck"
+            android:background="@drawable/login_edit_normal"
+            android:singleLine="false"
+            android:hint="@string/SRTM"
+            android:textColor="#ff0000"
+            android:textSize="20dp" >
+            
+          <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/Button01"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/kc_sendmessage"
+            android:background="@drawable/chat_send_btn"
+            android:text="@string/KC" />
+
+        <Button
+            android:id="@+id/kcsm"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/kcsear"
+            android:background="@drawable/chat_send_btn"
+            android:text="@string/JGSM" />
+
+        <Button
+            android:id="@+id/kcsjsm"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@+id/kcsear"
+            android:layout_toLeftOf="@+id/kcsm"
+            android:layout_toRightOf="@+id/kcsear"
+            android:background="@drawable/chat_send_btn"
+            android:text="@string/Sjsm" />
+
+        <ImageButton
+            android:id="@+id/KCImageButton02"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/kcck"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/more_select" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/kcSview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/kctextview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+    </ScrollView>
+    </LinearLayout>
+</ScrollView>

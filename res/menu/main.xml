@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/DHLL"
+        android:title="@string/DJLL"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:icon="@android:drawable/ic_menu_view"
+       />
+
+</menu>

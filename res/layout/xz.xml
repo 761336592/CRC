@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"        
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="#eee" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+            
+            <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/jxc_ch" />
+            
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/app_name"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+            
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="020-85279260"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/main_login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style_green"
+            android:gravity="center"
+            android:paddingLeft="130dp"
+            android:paddingRight="130dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/SY"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:onClick="welcome_login" />
+
+        <Button
+            android:id="@+id/main_regist_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_style_white"
+            android:gravity="center"
+            android:paddingLeft="130dp"
+            android:paddingRight="130dp"
+            android:text="@string/ZC"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:onClick="welcome_register"  />
+
+        
+    </LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_top"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bar" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/ZHTJ"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/login_top" >
+
+        <EditText
+            android:id="@+id/tjmm"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/tjbh"
+            android:layout_below="@+id/tjbh"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/login_editbox"
+            android:ems="10"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="15sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tjbh"
+            android:layout_alignBottom="@+id/tjbh"
+            android:layout_alignLeft="@+id/textView1"
+            android:background="@drawable/btn_style_green"
+            android:padding="8dp"
+            android:text="@string/ZH"
+            android:textColor="#000"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/tjbh"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="58dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:background="@drawable/login_editbox"
+            android:ems="10"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="15sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tjmm"
+            android:layout_alignBottom="@+id/tjmm"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/btn_style_green"
+            android:padding="8dp"
+            android:text="@string/zhMM"
+            android:textColor="#000"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text=""
+            
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/zhqd"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/btn_style_green"
+        android:onClick="login_mainweixin"
+        android:text="@string/ZHQD"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/tjfh"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/zhqd"
+        android:layout_alignBottom="@+id/zhqd"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/zhqd"
+        android:background="@drawable/btn_style_green"
+        android:onClick="login_mainweixin"
+        android:text="@string/FH"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</RelativeLayout>

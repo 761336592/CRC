@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="24dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/dhy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/DJLL"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <EditText
+            android:id="@+id/dh_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/search_bu"
+            android:background="#FAFCFDF9"
+            android:focusable="true"
+            android:layout_marginLeft="2dp"
+            android:hint="请扫描 或 输入单号查询"
+            android:singleLine="true"
+            android:textSize="18sp" >
+           
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/search_bu"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/dh_edit"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/mybutton"
+            android:text="@string/SSZL"
+            android:textSize="16sp" />
+        
+     </RelativeLayout>
+     
+   <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_bg_default" >    
+
+        <myview.MyListview
+            android:id="@+id/my_list_view"
+            android:layout_marginTop="2dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:cacheColorHint="#00000000"
+            android:dividerHeight="1dip" >
+
+      </myview.MyListview>
+      <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            android:layout_marginLeft="120dp" />
+  </RelativeLayout>  
+
+
+</LinearLayout>

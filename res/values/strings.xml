@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <string name="app_name">验单出库系统</string>
+     <string name="ZL">资料</string>
+    <string name="LING">0</string>
+    <string name="YI">1</string>
+    <string name="NOBAR">条码不在该单据里面</string>
+    <string name="DHBZ">订单不存在</string>
+    <string name="bBAR">出库数大于应扫数量</string>
+    <string name="SMWC">订单完成</string>
+     <string name="DDLQ">订单正在清点，无法下载 </string>
+     <string name="ZZCX">正在下载......</string> 
+    <!--  BluetoothChat -->
+    <string name="send">发送</string>
+   
+    
+    
+    <string name="not_connected">你没有连接到一个设备</string>
+    <string name="bt_not_enabled_leaving">蓝牙未启用。程序退出</string>
+    <string name="title_connecting">连接蓝牙枪..</string>
+    <string name="title_connected_to">蓝牙枪已连接 </string>
+    <string name="title_not_connected">蓝牙枪关闭</string>
+    <string name="printer_connecting">连接打印机..</string>
+    <string name="printer_connected_to">打印机已连接 </string>
+    <string name="printer_not_connected">打印机未连接</string>
+    <string name="button_clean">清屏</string>
+    <string name="button_break">连接</string>
+    <string name="checkBox_sixteen">十六进制显示</string>
+    <string name="radioMale">十六进制输出</string>
+    <string name="checkBox_line_feed">换行输出</string>
+    <string name="button_cleantwo">清除输入框</string>
+    <string name="duankai">断开</string>
+    <string name="prompt_message">没有数据可供查看</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">扫描未知设备...</string>
+    <string name="select_device">选择一个设备连接</string>
+    <string name="none_paired">没有已配对设备</string>
+    <string name="none_found">没有建立连接</string>
+    <string name="title_paired_devices">配对的装备</string>
+    <string name="title_other_devices">其他可用的设备</string>
+    <string name="button_scan">扫描设备</string>
+     <string name="button_full_screen">全屏</string>
+     <string name="button_return">返回</string>
+    <!-- Options Menu -->
+    <!-- Options Menu -->
+    <string name="secure_connect">连接一个设备</string>
+    <string name="insecure_connect">设置</string>
+    <string name="discoverable">设置蓝牙可见</string>
+    <string name="clenr">程序退出</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+       <!-- 资料更新 -->
+    <string name="BAR">条码不能为空</string>   
+    <string name="ZLGX">资料更新</string>
+    <string name="INF1">名称</string>
+    <string name="INF2">货号</string>
+    <string name="INF3">规格</string>
+    <string name="INF4">型号</string>
+    <string name="INF5">进价</string>
+    <string name="INF6">售价</string>
+    <string name="INF7">单位</string>
+    <string name="INF8">备注一</string>
+    <string name="INF9">备注二</string>
+    <string name="INF10">备注三</string>
+    <string name="setinf">请先将商品资料.txt放到SD卡的JXC目录下</string>
+    <string name="seton">导入完成共：</string>
+    <string name="inf">条</string>
+    <string name="INFre">"该功能试用到期，请注册"</string>
+    <string name="save">"保存成功"</string>
+     <string name="ZZDR">正在导入商品资料 </string>
+     <string name="DDYX">请耐心等待 </string>
+     <string name="GBKC">该操作将会改变库存，是否继续 </string> 
+     <string name="SRTM">请输入条码</string>
+    <!--出入库盘点的-->
+     <string name="YCH">应出</string>
+    <string name="Transferpovit">未传:</string>
+    <string name="Transferall">已传:</string>
+    <string name="RKtital">入库扫描</string>
+    <string name="CKtital">出库扫描</string> 
+    <string name="PDtital">盘点扫描</string> 
+    <string name="KCtital">库存查询</string> 
+     <string name="DBtital">商品调拨</string>
+    <string name="INFtital">资料更新</string>
+    <string name="Searchtital">资料浏览</string>
+    <string name="power">电量:</string> 
+    <string name="SKconnected">已连接服务器  </string> 
+    <string name="Noconnected">未连接服务器  </string>  
+     <string name="connectting">正在连接服务器  </string>  
+    <string name="SKconnecting">正在连接服务器  </string> 
+    <string name="Noset">还没有设置IP，请到系统设置里面进行设置  </string> 
+    <string name="rescan">重复扫描,无法入库</string>
+    <string name="nosent">条码不能是空的</string>
+    <string name="Delet">删除成功</string>
+    <string name="SYS">系统提示</string>
+    <string name="IsClear">是否清空数据</string>
+    <string name="xgzl">是否需要修改商品资料</string>
+    <string name="S">确定</string>
+    <string name="N">返回</string>
+    <string name="NCK">重复扫描,无法出库</string>
+    <string name="NKC">库存不足,无法出库</string>
+    <string name="BXSZ">输入必须是数字</string>
+    <string name="RScan">重复扫描</string>
+    <string name="SB">扫描失败</string>
+    <string name="Sockted">已经连接server</string>
+    <string name="Nosocket">服务器连接失败！请检查网络是否打开</string>
+    <string name="IP">连接IP异常</string>
+    <string name="dk">服务器断开了</string>
+    <string name="NOinft">   无该条码资料</string>
+    <string name="DH">单号搜索</string>
+    <string name="CK">仓库</string>
+     <string name="CK1">仓库:</string>
+     <string name="DCCK">调出仓库</string>
+    <string name="DRCK">调入仓库</string> 
+    <string name="TM">条码</string>
+    <string name="SL">数量</string>
+    <string name="YR">已入</string>
+    <string name="KC">库存</string>
+    <string name="YY">已调</string>
+     <string name="QDDB">确定</string>
+    <string name="QDRK">确定入库</string>
+    <string name="SSZL">搜索资料</string>
+    <string name="Sjsm">手机扫描</string>
+    <string name="JGSM">激光扫描</string>  
+    <string name="QDcK">确定出库</string> 
+    <string name="DYTM">打印条码</string> 
+    <string name="DYEW">二维码</string> 
+     <string name="ywm">一维码</string> 
+    <string name="SJ">售价</string>
+    <string name="YC">已出</string>
+     <string name="QDPD">确定盘点</string>
+     <string name="YP">已盘</string>
+      <string name="SAVEINF">保存资料</string>
+      <string name="NOPRINT">该单据没有数据需要打印</string>  
+     <string name="PRINTSET">打印设置</string> 
+     <string name="PRINTtatil">入库单打印属性</string>   
+     <string name="XJGL">小计关联</string>
+     <string name="gl">*数量</string>
+     <string name="DYTT">打印抬头</string>
+     <string name="PRINTcktatil">出库单打印属性</string>  
+     <string name="SCZL">保存设置</string>  
+     <string name="BCZL">保存成功</string>    
+     <string name="DJDY">单据打印</string> 
+     <string name="DYSZ">打印设置</string>  
+      <string name="XJ">小计</string>  
+      <string name="ZJ">总计</string>
+      <string name="TMZL">种类</string>      
+      <string name="DJLL">订单列表</string> 
+      <string name="CKLL">仓库浏览</string>  
+      <string name="MXLL">明细浏览</string>   
+        
+     <!--员工登陆的-->
+     <string name="YHDL">用户登录 </string> 
+     <string name="FH">返回</string>
+     <string name="DL">登录</string>
+     <string name="CS">(初始账号01)</string>
+     <string name="MM">(密码111111)</string>
+      <!--注册-->
+      <string name="ZC">注册</string>
+      <string name="SY">试用</string>
+      <string name="SYQD">试用到期</string>
+      <string name="ts">您的试用期已到\n如果想继续使\n用请注册软件</string>
+      <string name="TCQ">退出</string>
+      <!--账号添加的--> 
+       <string name="ZHTJ">账号添加 </string> 
+       <string name="ZH">账号 </string>
+       <string name="zhMM">密码</string>
+       <string name="ZHQD">确定</string>
+       <string name="ZHSC">账号删除</string>
+       
+       
+       <string name="ZHGL">账号管理</string>
+        <string name="ZHQH">账号切换</string>
+        <string name="ZGMM">修改密码</string>
+        <string name="HFSZ">恢复出厂设置</string>
+        
+        
+        <string name="WLSZ">网络设置</string>
+        <string name="IPSZ">IP设置</string>
+        <string name="IPSZBC">请输入IP,并保存设置</string>
+        <string name="DKSZBC">请输入端口,并保存设置</string>
+        <string name="DKH">端 口 号:</string>
+        <string name="FWQM">服务器名称:</string>
+        <string name="BCSZMC">    保存设置(修改完成后点击即可保存)</string>
+        
+        
+        <string name="SMSZ">扫描设置</string>
+        <string name="SHYX">是否允许重复扫描</string>
+        <string name="YXSM">允许</string>
+        <string name="NYXSM">不允许</string>
+        <string name="SFSL">是否需要输入数量</string>
+        <string name="MRSL">默认为1</string>
+        <string name="SRSL">输入</string>
+        <string name="SFCK">是否需要仓库</string>
+        <string name="NXYCK">不需要</string>
+        <string name="XYCK">需要</string>
+        <string name="XYDH">是否需要单号</string>
+        <string name="SRDH">输入</string>
+        <string name="ZDDH">自动单号</string>
+        <string name="SFSJ">修改售价</string>
+        <string name="MMXG">密码修改</string>
+        <string name="JMM">旧密码</string>
+         <string name="xMM">新密码</string>
+         <string name="EWMSM">二维码扫描</string>
+         <string name="XTSZ">设置</string>
+         <string name="SGQKMM">此操作将会清空掉所有的用户名\n并且密码变成初始密码\n是否恢复\n</string>
+         <string name="GYJXC">关于进销存</string>
+         <string name="BBH">版本号:      JXC_android.2.7.15</string>
+         <string name="JSZC">技术支持     2201037371</string>
+         <string name="LXWM">联系我们     020-85279260</string>         
+         <string name="DRZLS">导入资料</string>
+         <string name="qksj">清空数据</string>
+         <string name="CJSB">数据库加载失败，请手机内存空间是否充足</string> 
+         <!--商品资料浏览-->
+           <string name="ZLLL">资料浏览</string>                     
+           <string name="exit">是否退出软件</string>
+         <!--引导界面-->  
+         <string name="DRINF">如何导入商品资料</string>
+         <string name="DRINFsj">如何导入商品资料到手机中</string>
+         <string name="LJLY">如何连接蓝牙枪</string>
+         <string name="RHLJ">扫描枪如何能与手机连接?</string>    
+         <string name="CCSY">初次使用时，进入到扫描界面，顶部有“蓝牙枪关闭”的按钮,点击进行蓝牙搜索,RS开头的是蓝牙枪,成功之后，再进入时会自动连接</string>
+         <string name="zlinf">软件安装完成之后，会在手机的内置SD卡里面生成一个JXC的文件夹,根据我们提供的模板编辑好资料(其中条码,进价和售价三列的位置和抬头不能改变),并另存为商品资料.txt,最后将文本文件放到JXC目录下,之后在主菜单点击导入资料菜单</string> 
+         <string name="LJFWQ">如何连接服务器</string>
+         <string name="LJFWQt">手机端如何连接服务器</string> 
+         <string name="JRJM">点击这里进入主界面</string>
+         <string name="IPSETING">在主菜单界面进入网络设置进行,IP 端口  和 服务器名称的输入并保存,设置好之后进入扫描界面就会自动连接服务器了 </string> 
+         <string name="IPSETING1">在扫描界面当发现未传数量过多的时候，可能是网络卡顿，可以点击右上角的“服务器连接”按钮先断开，再次点击进行连接 </string>
+          <!--使用说明-->
+          <string name="smtt">帮助</string> 
+          <string name="xgn">你未发现的小功能</string>
+           <string name="CKBNSK">仓库不能是空的</string>
+</resources>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/chat_bg_default"
+     android:scrollbarStyle="outsideOverlay"
+     android:cacheColorHint="#0000" 
+    android:orientation="vertical" >
+ <LinearLayout
+      android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/chat_bg_default"
+    android:orientation="vertical" >
+     
+    <RelativeLayout
+        android:id="@+id/qs_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/pdyc"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView1"
+            android:background="@drawable/title_btn_right"
+            android:text="@string/Transferall"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/pdwc"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/title_btn_right"
+            android:text="@string/Transferpovit"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/pdwc"
+            android:text="@string/PDtital"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+ <RelativeLayout
+     android:id="@+id/qs_layout"
+     android:layout_width="fill_parent"
+     android:layout_height="35dp"
+     android:background="@drawable/title_bar"
+     android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/pdbt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/pddl"
+            android:background="@drawable/title_btn_right"
+             android:text="@string/title_not_connected"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/pddl"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/title_btn_right"
+            android:text="@string/power"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/qslj"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/pddl"
+            android:background="@drawable/title_btn_right"
+            android:textColor="#fff"
+            android:text="@string/Noconnected"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/qs_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_footer_bg" >
+
+        <EditText
+            android:id="@+id/pdck"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/Button04"
+            android:background="@drawable/login_edit_normal" 
+            android:hint="CK001"
+            android:singleLine="true"
+            android:textColor="#ff0000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/pddh"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/pdck"
+            android:layout_toRightOf="@+id/Button04"
+            android:background="@drawable/login_edit_normal"
+            
+            android:hint="DH001"
+            android:singleLine="true"
+            android:textColor="#ff0000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/qs_sendmessage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/pddh"
+            android:background="@drawable/login_edit_normal"
+            android:singleLine="false"
+            android:textColor="#ff0000"
+            android:hint="@string/SRTM"
+            android:textSize="20dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/Button04"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_above="@+id/qs_sendmessage"
+          
+            android:background="@drawable/chat_send_btn"
+            android:text="@string/DH" />
+
+        <Button
+            android:id="@+id/Button03"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/chat_send_btn"
+            android:text="@string/CK" />
+
+        <EditText
+            android:id="@+id/pdKC"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/bztv"
+            android:layout_alignLeft="@+id/qs_send"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/Button01"
+            android:background="@drawable/login_edit_normal"
+            android:ems="10"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="#ff0000"
+            android:textSize="21sp" />
+
+        <ImageButton
+            android:id="@+id/pdImageButton02"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/pdck"
+            android:layout_alignLeft="@+id/pdImageButton01"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/more_select" />
+
+        <ImageButton
+            android:id="@+id/pdImageButton01"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_above="@+id/qs_sendmessage"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/pddh"
+            android:background="@drawable/more_select" />
+
+        <Button
+            android:id="@+id/Button01"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/qsr"
+            android:layout_toLeftOf="@+id/pdKC"
+            android:background="@drawable/chat_send_btn"
+            android:text="@string/KC"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/qsr"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/pddh"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/qs_sendmessage"
+            android:background="@drawable/login_edit_normal"
+            android:ems="10"
+            android:hint="1"
+            android:digits="1234567890.-"
+            android:singleLine="true"
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bztv"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/Button01"
+            android:layout_toLeftOf="@+id/qsr"
+            android:background="@drawable/chat_send_btn"
+            android:text="@string/YP" />
+
+        <Button
+            android:id="@+id/QSR"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/qs_sendmessage"
+            android:layout_toLeftOf="@+id/bz"
+            android:background="@drawable/chat_send_btn"
+            android:text="@string/SL" />
+
+        <EditText
+            android:id="@+id/bz"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/qsr"
+            android:layout_alignTop="@+id/Button01"
+            android:layout_toLeftOf="@+id/Button01"
+            android:background="@drawable/login_edit_normal"
+            android:ems="10"
+            android:numeric="decimal"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="#ff0000"
+            android:textSize="21sp" />
+
+        <Button
+            android:id="@+id/qs_send"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/pdKC"
+            android:background="@drawable/chat_send_btn"
+            android:text="@string/QDPD" />
+
+        <Button
+            android:id="@+id/qsear"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/bztv"
+            android:background="@drawable/chat_send_btn"
+            android:text="@string/SSZL" />
+
+        <Button
+            android:id="@+id/pdsjsm"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/qsear"
+            android:layout_alignTop="@+id/qs_send"
+            android:layout_toLeftOf="@+id/qs_send"
+            android:layout_toRightOf="@+id/qsear"
+            android:background="@drawable/chat_send_btn"
+            android:text="@string/Sjsm" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/QSview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/qstextview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp" />
+    </ScrollView>
+     </LinearLayout>
+</ScrollView>

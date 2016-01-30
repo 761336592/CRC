@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/chat_bg_default"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/KCLLtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="99dp"
+            android:text="@string/ZLLL"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ckts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/KCLLtitle"
+            android:layout_alignBottom="@+id/KCLLtitle"
+            android:layout_toRightOf="@+id/KCLLtitle"
+            android:text="@string/ZLLL"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_bg_default" >    
+        <EditText
+            android:id="@+id/flag_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/login_edit_normal"
+            android:focusable="true"    
+            android:singleLine="true"
+            android:textSize="23sp" >
+            <requestFocus />
+        </EditText>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="310dp"
+            android:layout_above="@+id/text_page"
+            android:layout_below="@+id/flag_edit"
+            android:background="@drawable/chat_bg_default"
+            android:cacheColorHint="#0000"
+            android:focusable="true"
+            android:dividerHeight="5dp"
+            android:stackFromBottom="true" />
+        
+        <ImageButton
+            android:id="@+id/button_next"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/text_page"
+            android:background="@drawable/nnext" />
+
+        <ImageButton
+            android:id="@+id/button_last"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/text_page"
+            android:background="@drawable/nnextt" />
+
+        <TextView
+            android:id="@+id/text_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="130/130"
+            android:textSize="35sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

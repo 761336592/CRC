@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/kcdattail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/kcts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/kcdattail"
+            android:text="130/130"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_bg_default" >
+
+        <ListView
+            android:id="@+id/kcdatlist"
+            android:layout_width="fill_parent"
+            android:layout_height="310dp"
+            android:layout_above="@+id/kcdattext_page"
+            android:layout_below="@+id/kcdatedit"
+            android:cacheColorHint="#0000"
+            android:dividerHeight="5dp"
+            android:focusable="true"
+            android:stackFromBottom="true" />
+
+        <TextView
+            android:id="@+id/kcdattext_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="130/130"
+            android:textSize="35sp" />
+        
+        <ImageButton
+            android:id="@+id/kcdatbutton_next"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/kcdattext_page"
+            android:background="@drawable/nnext" />
+
+        <ImageButton
+            android:id="@+id/kcdatbutton_last"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/kcdattext_page"
+            android:background="@drawable/nnextt" />
+
+        <EditText
+            android:id="@+id/kcdatedit"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/login_edit_normal"
+            android:ems="10"
+            android:focusable="true"
+            android:singleLine="true"
+            android:textSize="23sp" >
+
+            <requestFocus />
+        </EditText>
+
+    </RelativeLayout>
+
+</LinearLayout>

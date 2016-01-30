@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/chat_bg_default"
+    android:orientation="vertical" >
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/qs_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/dbyc"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/title_btn_right"
+            android:text="@string/Transferall"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/dbwc"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/title_btn_right"
+            android:text="@string/Transferpovit"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+             android:layout_alignBaseline="@+id/dbyc"
+            android:layout_alignBottom="@+id/dbyc"
+            android:text="@string/DBtital"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+ <RelativeLayout
+     android:id="@+id/qs_layout"
+     android:layout_width="fill_parent"
+     android:layout_height="35dp"
+     android:background="@drawable/title_bar"
+     android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/dbbt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/dbdl"
+            android:background="@drawable/title_btn_right"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/dbdl"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/title_btn_right"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/dblj"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/dbdl"
+            android:background="@drawable/title_btn_right"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/qs_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_footer_bg" >
+
+        <Button
+            android:id="@+id/dbear"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/dbsjsm"
+            android:background="@drawable/chat_send_btn"
+            android:text="@string/SSZL" />
+
+        <EditText
+            android:id="@+id/dbyy"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/bztv"
+            android:layout_alignTop="@+id/bztv"
+            android:layout_toLeftOf="@+id/Button01"
+            android:layout_toRightOf="@+id/bztv"
+            android:background="@drawable/login_edit_normal"
+            android:ems="10"
+            android:numeric="decimal"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="#ff0000"
+            android:textSize="21sp" />
+
+        <Button
+            android:id="@+id/dbsjsm"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/Button01"
+            android:layout_toLeftOf="@+id/pdck"
+            android:layout_toRightOf="@+id/dbear"
+            android:background="@drawable/chat_send_btn"
+            android:text="@string/Sjsm" />
+
+        <Button
+            android:id="@+id/dbqs_send"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/dbear"
+            android:layout_alignLeft="@+id/pdck"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/dbsjsm"
+            android:background="@drawable/chat_send_btn"
+            android:text="@string/QDDB" />
+
+        <EditText
+            android:id="@+id/dbKC"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/bztv"
+            android:layout_alignLeft="@+id/dbqs_send"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/Button01"
+            android:background="@drawable/login_edit_normal"
+            android:ems="10"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="#ff0000"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/pdck"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_above="@+id/Button04"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/login_edit_normal"
+            android:ems="10"
+            android:hint="CK001"
+            android:singleLine="true"
+            android:textColor="#ff0000"
+            android:textSize="20sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/dbdh"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/Button03"
+            android:background="@drawable/login_edit_normal"
+           
+            android:hint="DH001"
+            android:singleLine="true"
+            android:textColor="#ff0000"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/dbImageButton01"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/pdck"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/more_select" />
+
+        <Button
+            android:id="@+id/dbButton04"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/pddh"
+            android:layout_alignBottom="@+id/pddh"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/Button03"
+            android:background="@drawable/chat_send_btn"
+            android:text="@string/DH" />
+
+        <Button
+            android:id="@+id/Button03"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/dbear"
+            android:layout_below="@+id/dbButton04"
+            android:background="@drawable/chat_send_btn"
+            android:text="@string/DCCK" />
+
+        <EditText
+            android:id="@+id/dcck"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/dbButton04"
+            android:layout_toRightOf="@+id/Button03"
+            android:background="@drawable/login_edit_normal"
+            android:hint="CK001"
+            android:singleLine="true"
+            android:textColor="#ff0000"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/dbImageButton02"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/dcck"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/dbButton04"
+            android:background="@drawable/more_select" />
+
+        <Button
+            android:id="@+id/Button05"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/Button03"
+            android:layout_below="@+id/Button03"
+            android:background="@drawable/chat_send_btn"
+            android:text="@string/DRCK" />
+
+        <EditText
+            android:id="@+id/drck"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/dcck"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/Button05"
+            android:background="@drawable/login_edit_normal"
+            android:hint="CK001"
+            android:singleLine="true"
+            android:textColor="#ff0000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/dbqs_sendmessage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/Button05"
+            android:background="@drawable/login_edit_normal"
+            android:singleLine="false"
+            android:textColor="#ff0000"
+            android:hint="@string/SRTM"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/dbQSR"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/dbqs_sendmessage"
+            android:layout_toLeftOf="@+id/qsr"
+            android:background="@drawable/chat_send_btn"
+            android:text="@string/SL" />
+
+        <EditText
+            android:id="@+id/dbqsr"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/dbyy"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/dbQSR"
+            android:background="@drawable/login_edit_normal"
+            android:ems="10"
+            android:hint="1"
+            android:digits="1234567890.-"
+            android:singleLine="true"
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bztv"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/dbQSR"
+            android:layout_toLeftOf="@+id/qsr"
+            android:background="@drawable/chat_send_btn"
+            android:text="@string/YY" />
+
+        <ImageButton
+            android:id="@+id/dbImageButton03"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/drck"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/drck"
+            android:background="@drawable/more_select" />
+
+        <Button
+            android:id="@+id/Button01"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/dbyy"
+            android:layout_below="@+id/dbqsr"
+            android:layout_toLeftOf="@+id/dbqs_send"
+            android:background="@drawable/chat_send_btn"
+            android:text="@string/KC"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/dbQSview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/dbtextview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+    </ScrollView>
+    </LinearLayout>
+</ScrollView>

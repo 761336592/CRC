@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/chat_bg_default"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rk_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" 
+        android:background="@drawable/title_bar" >
+          
+        <TextView
+            android:id="@+id/zlrk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView1"
+            android:background="@drawable/title_btn_right"
+            android:text="@string/Transferall"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/zlwc"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/textView1"
+            android:background="@drawable/title_btn_right"
+            android:text="@string/Transferpovit"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/INFtital"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="33dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/zlbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_btn_right"
+        android:text="@string/title_not_connected"
+        android:textColor="#fff"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/zlDL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_btn_right"
+        android:text="@string/power"
+        android:textColor="#fff"
+        android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/jbprint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title_btn_right"
+            android:text="@string/printer_not_connected"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/zllj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title_btn_right"
+            android:text="@string/Noconnected"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+<ScrollView
+    android:id="@+id/rkview"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+             <LinearLayout
+                 android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical" >
+                 <EditText
+			            android:id="@+id/zl_sendmessage"
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_toRightOf="@+id/rk_send"
+			            android:background="@drawable/login_edit_normal"
+			            android:singleLine="false"
+			            android:textColor="#ff0000"
+			            android:hint="@string/SRTM"
+			            android:textSize="20dp" >
+                  <requestFocus />
+        </EditText>
+             </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/E1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/B2"
+                        android:background="@drawable/login_edit_normal"
+                        android:singleLine="false"
+                        android:textColor="#ff0000"
+                        android:textSize="20dp" >
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/B2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/chat_send_btn"
+                        android:text="@string/INF1"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/E2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_toRightOf="@+id/B3"
+                        android:background="@drawable/login_edit_normal"
+                        android:singleLine="true"
+                        android:textColor="#ff0000"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/B3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/chat_send_btn"
+                        android:text="@string/INF2"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/E3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_toRightOf="@+id/B4"
+                        android:background="@drawable/login_edit_normal"
+                        android:singleLine="true"
+                        android:textColor="#ff0000"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/B4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/chat_send_btn"
+                        android:text="@string/INF3"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/E4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_toRightOf="@+id/B5"
+                        android:background="@drawable/login_edit_normal"
+                        android:singleLine="true"
+                        android:textColor="#ff0000"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/B5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/chat_send_btn"
+                        android:text="@string/INF4"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/E5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_toRightOf="@+id/B6"
+                        android:background="@drawable/login_edit_normal"
+                        android:numeric="decimal"
+                        android:singleLine="true"
+                        android:textColor="#ff0000"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/B6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/chat_send_btn"
+                        android:text="@string/INF5"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/E6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_toRightOf="@+id/B7"
+                        android:background="@drawable/login_edit_normal"
+                        android:numeric="decimal"
+                        android:singleLine="true"
+                        android:textColor="#ff0000"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/B7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/chat_send_btn"
+                        android:text="@string/INF6"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/E7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_toRightOf="@+id/B8"
+                        android:background="@drawable/login_edit_normal"
+                        android:singleLine="true"
+                        android:textColor="#ff0000"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/B8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/chat_send_btn"
+                        android:text="@string/INF7"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/E8"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_toRightOf="@+id/B9"
+                        android:background="@drawable/login_edit_normal"
+                        android:singleLine="true"
+                        android:textColor="#ff0000"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/B9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/chat_send_btn"
+                        android:text="@string/INF8"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/E9"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_toRightOf="@+id/B10"
+                        android:background="@drawable/login_edit_normal"
+                        android:singleLine="true"
+                        android:textColor="#ff0000"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/B10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/chat_send_btn"
+                        android:text="@string/INF9"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/E10"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_toRightOf="@+id/B1"
+                        android:background="@drawable/login_edit_normal"
+                        android:singleLine="true"
+                        android:textColor="#ff0000"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/B1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/chat_send_btn"
+                        android:text="@string/INF10"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+                <RelativeLayout
+			        android:id="@+id/rk_bottom"
+			        android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+			         android:gravity="center_vertical"
+			       
+			       >
+			
+			        <Button
+			            android:id="@+id/zlSear"
+			            android:layout_width="wrap_content"
+			            android:layout_height="60dp"
+			           
+			            android:layout_alignParentLeft="true"
+			            android:background="@drawable/chat_send_btn"
+			            android:text="@string/SSZL" />
+
+			        <Button
+			            android:id="@+id/zlSJ"
+			            android:layout_width="wrap_content"
+			            android:layout_height="60dp"
+			            android:layout_alignParentRight="true"
+			            android:layout_alignParentTop="true"
+			            android:background="@drawable/chat_send_btn"
+			            android:text="@string/Sjsm"
+			            android:textSize="16sp" />
+
+			        <Button
+			            android:id="@+id/zlbc"
+			            android:layout_width="wrap_content"
+			            android:layout_height="60dp"
+			            android:layout_alignParentTop="true"
+			            android:layout_toLeftOf="@+id/zlSJ"
+			            android:layout_toRightOf="@+id/zlSear"
+			            android:background="@drawable/chat_send_btn"
+			            android:text="@string/SAVEINF"
+			            android:textSize="16sp" />
+			
+			    </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+</LinearLayout>
